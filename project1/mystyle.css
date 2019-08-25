@@ -1,0 +1,38 @@
+body {
+  background-color: lightblue;
+}
+#divMain{
+  border: 5px solid green;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px
+}
+#divHead{
+  height: 15vh;
+  background-color: red;
+}
+#divMenu{
+  height: 10vh;
+  background-color: orange;
+}
+#divButton{
+  height: 8vh;
+  background-color: yellow;
+}
+#divBody{
+  height: 65vh;
+  background-color: green;
+}
+#divFoot{
+  height: 10vh;
+  background-color: blue;
+}
+
+/* divMain">  
+<div id="divHead">  </div>
+<div id="divMenu"> </div>
+<div id="divButton"></div>
+
+<div id="divBody"></div>
+<div id="divFoot" */
