@@ -2,23 +2,60 @@ body {
   background-color: lightblue;
 }
 #divMain{
-  border: 5px solid green;
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  width: 600px
+  width: 90vh;
 }
 #divHead{
   height: 15vh;
   background-color: red;
+  font-size: 45pt;
+  text-align: center;
 }
 #divMenu{
   height: 10vh;
   background-color: orange;
 }
-#divButton{
+.divButton b1{
+  float: left;
   height: 8vh;
-  background-color: yellow;
+  width: 10vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 6vh;
+}
+.divButton b2{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 7vh;
+}
+.divButton b3{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 7vh;
+}
+.divButton b4{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 7vh;
+}
+.divButton b5{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: red;
+  margin-top: 1vh;
+  margin-left: 7vh;
 }
 #divBody{
   height: 65vh;
@@ -26,13 +63,5 @@ body {
 }
 #divFoot{
   height: 10vh;
-  background-color: blue;
+  background-color: lightcoral;
 }
-
-/* divMain">  
-<div id="divHead">  </div>
-<div id="divMenu"> </div>
-<div id="divButton"></div>
-
-<div id="divBody"></div>
-<div id="divFoot" */
