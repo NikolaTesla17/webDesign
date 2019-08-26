@@ -1,3 +1,90 @@
-body{
-    background-color: lightgoldenrodyellow;
+body {
+  background-color: rgb(0,166,166);
+}
+#divMain{
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90vh;
+}
+#divHead{
+  height: 15vh;
+  background-color: rgb(0,76,76));
+  font-size: 45pt;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-bottom-width: 1px;
+}
+#divMenu{
+  height: 10vh;
+  background-color: rgb(0,104,104);
+  border-style: solid;
+  border-width: 3px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+.divButton b1{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: rgb(0,166,166);
+  margin-top: 1vh;
+  margin-left: 6vh;
+  border-style: solid;
+  border-width: 1px;
+}
+.divButton b2{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: rgb(0,166,166);
+  margin-top: 1vh;
+  margin-left: 7vh;
+  border-style: solid;
+  border-width: 1px;
+}
+.divButton b3{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: rgb(0,166,166);
+  margin-top: 1vh;
+  margin-left: 7vh;
+  border-style: solid;
+  border-width: 1px;
+}
+.divButton b4{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: rgb(0,166,166);
+  margin-top: 1vh;
+  margin-left: 7vh;
+  border-style: solid;
+  border-width: 1px;
+}
+.divButton b5{
+  float: left;
+  height: 8vh;
+  width: 10vh;
+  background-color: rgb(0,166,166);
+  margin-top: 1vh;
+  margin-left: 7vh;
+  border-style: solid;
+  border-width: 1px;
+}
+#divBody{
+  height: 63vh;
+  background-color: rgb(0,43,43);
+  border-style: solid;
+  border-width: 3px;
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+}
+#divFoot{
+  height: 10vh;
+  background-color: rgb(0,128,128);
+  border-style: solid;
+  border-width: 3px;
 }
