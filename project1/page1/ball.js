@@ -31,15 +31,15 @@ class Ball{
   }
   render(){//render one frame
     var shape = Math.floor(Math.random() * 3) + 1;
-    if (var shape == 1){
+    if (shape == 1){
         ellipse(this.x,this.y,50,50)
         fill(this.clr);
     }
-    if (var shape == 2){
+    if (shape == 2){
         triangle(this.x,this.y,50,50)
         fill(this.clr);
     }
-    if (var shape == 3){
+    if (shape == 3){
         rect(this.x,this.y,50,50)
         fill(this.clr);
     }
