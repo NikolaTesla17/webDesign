@@ -3,7 +3,7 @@
 //  Project 8/22
 
 var balls = [];
-var x = prompt("Number of Balls","42") || 18; //user entered number of balls page dialog default 18
+var x = prompt("Number of Shapes?","42") || 18; //user entered number of balls page dialog default 18
 function setup() {
   var cnv = createCanvas(800, 800);
   cnv.position((windowWidth-width)/2, 30);
