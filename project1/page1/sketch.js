@@ -3,7 +3,7 @@
 //  Project 8/22
 
 var balls = [];
-var x = prompt("Number of Balls","42"); //user entered number of balls page dialog
+var x = prompt("Number of Balls","42") || 18; //user entered number of balls page dialog default 18
 function setup() {
   var cnv = createCanvas(800, 800);
   cnv.position((windowWidth-width)/2, 30);
@@ -13,7 +13,6 @@ function setup() {
     balls[q] = new Ball(random(width),random(height),random(-5,5),random(-5,5))
   }
 }
-
 
 function draw() {
   //for(i=1;i<3;i++){} put other function inside this to run at 60fps
