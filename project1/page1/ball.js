@@ -29,6 +29,11 @@ class Ball{
   update(){//update location
     this.x = this.x + this.dx;
     this.y = this.y + this.dy;
+
+    this.x2 = this.x+50;
+    this.y2 = this.y+50;
+    this.x3 = this.x-20;
+    this.y3 = this.y-20;
   }
   render(){//render one frame
     if (this.shape == 1){
@@ -36,7 +41,7 @@ class Ball{
         fill(this.clr);
     }
     if (this.shape == 2) {
-        triangle(this.x,this.y,50,50)
+        triangle(this.x,this.y,this.x2,this.y2,this.x3,this.y3)
         fill(this.clr);
     }
     if (this.shape == 3){
