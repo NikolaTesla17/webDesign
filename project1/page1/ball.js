@@ -6,9 +6,9 @@ class Ball{
     this.dy = dy;
     this.clr = color(random(255),random(255),random(255))
   }
-  
+
   run(){//use this so you dont have to run all of these for each ball
-    var audio = document.getElementById("audio_file"); 
+    var audio = document.getElementById("audio_file");
     this.checkEdges();
     this.update();
     this.render();
