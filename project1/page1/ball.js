@@ -5,6 +5,7 @@ class Ball{
     this.dx = dx;
     this.dy = dy;
     this.clr = color(random(255),random(255),random(255))
+    this.shape = Math.floor(Math.random() * 3) + 1;
   }
   run(){//use this so you dont have to run all of these for each ball
     this.checkEdges();
@@ -30,16 +31,15 @@ class Ball{
     this.y = this.y + this.dy;
   }
   render(){//render one frame
-    var shape = Math.floor(Math.random() * 3) + 1;
-    if (shape == 1){
+    if (this.shape == 1){
         ellipse(this.x,this.y,50,50)
         fill(this.clr);
     }
-    if (shape == 2){
+    if (this.shape == 2) {
         triangle(this.x,this.y,50,50)
         fill(this.clr);
     }
-    if (shape == 3){
+    if (this.shape == 3){
         rect(this.x,this.y,50,50)
         fill(this.clr);
     }
