@@ -31,8 +31,8 @@ class Ball{
     this.y = this.y + this.dy;
 
     this.x2 = this.x+50;
-    this.y2 = this.y+50;
-    this.x3 = this.x-20;
+    this.y2 = this.y+40;
+    this.x3 = this.x-80;
     this.y3 = this.y-20;
   }
   render(){//render one frame
@@ -41,7 +41,7 @@ class Ball{
         fill(this.clr);
     }
     if (this.shape == 2) {
-        triangle(this.x,this.y,this.x2,this.y2,60,60);
+        triangle(this.x,this.y,this.x2,this.y2,this.x3,this.y3);
         fill(this.clr);
     }
     if (this.shape == 3){
