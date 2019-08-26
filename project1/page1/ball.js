@@ -37,15 +37,15 @@ class Ball{
   }
   render(){//render one frame
     if (this.shape == 1){
-        ellipse(this.x,this.y,50,50)
+        ellipse(this.x,this.y,50,50);
         fill(this.clr);
     }
     if (this.shape == 2) {
-        triangle(this.x,this.y,this.x2,this.y2,this.x3,this.y3)
+        triangle(this.x,this.y,this.x2,this.y2,60,60);
         fill(this.clr);
     }
     if (this.shape == 3){
-        rect(this.x,this.y,50,50)
+        rect(this.x,this.y,50,50);
         fill(this.clr);
     }
   }
