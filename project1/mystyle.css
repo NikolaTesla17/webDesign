@@ -25,6 +25,8 @@ body {
   border-bottom-width: 2px;
 }
 .divButton b1{
+  text-align: center;
+  border-radius: 20px;
   float: left;
   height: 8vh;
   width: 10vh;
@@ -34,7 +36,13 @@ body {
   border-style: solid;
   border-width: 1px;
 }
+.divButton b1:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
 .divButton b2{
+  text-align: center;
+  border-radius: 20px;
   float: left;
   height: 8vh;
   width: 10vh;
@@ -43,8 +51,14 @@ body {
   margin-left: 7vh;
   border-style: solid;
   border-width: 1px;
+}
+.divButton b2:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 .divButton b3{
+  text-align: center;
+  border-radius: 20px;
   float: left;
   height: 8vh;
   width: 10vh;
@@ -53,8 +67,14 @@ body {
   margin-left: 7vh;
   border-style: solid;
   border-width: 1px;
+}
+.divButton b3:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 .divButton b4{
+  text-align: center;
+  border-radius: 20px;
   float: left;
   height: 8vh;
   width: 10vh;
@@ -64,7 +84,13 @@ body {
   border-style: solid;
   border-width: 1px;
 }
+.divButton b4:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
 .divButton b5{
+  text-align: center;
+  border-radius: 20px;
   float: left;
   height: 8vh;
   width: 10vh;
@@ -73,6 +99,10 @@ body {
   margin-left: 7vh;
   border-style: solid;
   border-width: 1px;
+}
+.divButton b5:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 #divBody{
   height: 63vh;
