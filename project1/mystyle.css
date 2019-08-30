@@ -16,6 +16,7 @@ body {
   border-width: 3px;
   border-bottom-width: 1px;
   background-image: url(head.jpg);
+  background-size: 600px 100px;
 }
 #divMenu{
   height: 10vh;
