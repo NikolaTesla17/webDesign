@@ -3,7 +3,7 @@
 //  Project 8/22
 
 var balls = [];
-var x = prompt("Number of Shapes?","42") || 18; //user entered number of balls page dialog default 18
+var x = prompt("Number of Balls","42"); //user entered number of balls page dialog
 function setup() {
   var cnv = createCanvas(800, 800);
   cnv.position((windowWidth-width)/2, 30);
@@ -14,13 +14,14 @@ function setup() {
   }
 }
 
+
 function draw() {
   //for(i=1;i<3;i++){} put other function inside this to run at 60fps
 ballsDraw();
 }
 
 function ballsDraw(){
-  background(5,5,5)//get rid of ball trails
+  background(5,5,5,50)//get trails back but just a little bit
   for(i=0;i<x;i++){
 balls[i].run();
 }
