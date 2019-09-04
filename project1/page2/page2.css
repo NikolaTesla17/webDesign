@@ -114,6 +114,9 @@ body {
   border-top-width: 1px;
   border-bottom-width: 0px;
 }
+img {
+  float: right;
+}
 #divFoot{
   height: 10vh;
   background-color: rgb(0,128,128);
