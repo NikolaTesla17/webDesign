@@ -116,6 +116,7 @@ body {
 }
 img {
   float: right;
+  transform: rotate(180deg);
 }
 #divFoot{
   height: 10vh;

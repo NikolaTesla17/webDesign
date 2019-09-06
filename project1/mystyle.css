@@ -25,6 +25,7 @@ body {
   border-width: 3px;
   border-top-width: 2px;
   border-bottom-width: 2px;
+  background-size: 300px 100px;
 }
 .divButton b1{
   text-align: center;
@@ -113,6 +114,9 @@ body {
   border-width: 3px;
   border-top-width: 1px;
   border-bottom-width: 0px;
+}
+img {
+  float: right;
 }
 #divFoot{
   height: 10vh;
