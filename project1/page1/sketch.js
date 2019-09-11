@@ -5,7 +5,7 @@
 var balls = [];
 function setup() {
   var ctx = createCanvas(400, 400);//make and position canvas
-  ctx.position((windowWidth-width)/2, 175);
+  ctx.position((windowWidth-width)/2, 160);
   background(5, 5, 5);
   fill(200, 30, 150);
   balls[1] = new Ball(random(width),random(height),random(-5,5),random(-5,5))//make the game ball

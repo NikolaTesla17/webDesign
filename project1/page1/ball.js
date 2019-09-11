@@ -1,4 +1,5 @@
 var p = 0;
+//var t = (prompt(what do you want to play to?, '4'))-1;
 class Ball{
     constructor(x,y,dx,dy){
       this.loc = createVector(x, y);
@@ -40,7 +41,7 @@ class Ball{
       this.loc.add(this.vel);//move things
     }
     win(){
-      if(p>1){
+      if(p>3){
         background(5,5,255);//wipe background make blue
         var w = "You Win!";//win string
         textSize(80);//make text fit
