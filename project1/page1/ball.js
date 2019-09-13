@@ -46,7 +46,7 @@ class Ball{
         var w = "You Win!";//win string
         textSize(80);//make text fit
         fill(255, 255, 255);//make win white
-        text(w, 10, 150);//write you win
+        text(w, 50, 250);//write you win
         throw new Error("won");//stop game
       }
     }
