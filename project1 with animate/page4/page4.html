@@ -4,6 +4,56 @@
   <link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
   <link rel="stylesheet" type="text/css" href="page4.css">
   <title><--Put your icon here</title>
+
+
+    <meta charset="UTF-8">
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<title>terry_HTML5 Canvas</title>
+<!-- write your code here -->
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="terry_HTML5 Canvas.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("DC490ADC5B159842ABADF016A6F080EE");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.terry_HTML5Canvas();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.framerate = lib.properties.fps;
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
   </head>
   <body>
 
@@ -18,26 +68,14 @@
           <b5><a href="../page4/page4.html">Portfolio</a></b5>
         </div>
       </div>
-      <div id="divBody">
+      <div id="divBody" onload="init();" style="margin:0px;">
+          <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:800px; height:800px">
+            <canvas id="canvas" width="800px" height="800px" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+            <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:800px; height:800px; position: absolute; left: 0px; top: 0px; display: block;">
+            </div>
+          </div>
+        </body>
 
-        <p>All you half to do is a bit of git cloning and a bit of setup to get this working</p>
-
-        <p>sudo apt-get install build-essential python3 python3-dev python3-pip python3-virtualenv
-           python3-numpy python3-picamera python3-pandas python3-rpi.gpio i2c-tools avahi-utils 
-           joystick libopenjp2-7-dev libtiff5-dev gfortran libatlas-base-dev libopenblas-dev 
-           libhdf5-serial-dev git</p>
-        
-        <p>python3 -m virtualenv -p python3 env --system-site-packages
-          echo "source env/bin/activate" >> ~/.bashrc
-          source ~/.bashrc</p>
-
-          <p>git clone https://github.com/autorope/donkeycar
-            cd donkeycar
-            git checkout master
-            pip install -e .[pi]
-            pip install tensorflow==1.13.1.</p>
-
-            <p>And that is it, your done</p>
             </div>
             <div id="divFoot">reach me at nayan@smuek.dev</div>
 
